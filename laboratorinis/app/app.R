@@ -53,6 +53,15 @@ server = function(input, output, session){
                        choices = data1$name, 
                        server = TRUE)
   
+  output$downloadDataFromTable <- downloadHandler(
+    filename = function() {
+      paste("data-", Sys.Date(), ".txt", sep="")
+    },
+    content = function(file) {
+      write.csv(data, file)
+    }
+  )
+  
   output$table = renderTable(
     data1 %>%
       filter(name == input$imones_pavadinimas), digits = 0)
@@ -61,9 +70,8 @@ server = function(input, output, session){
       ggplot(data1, wageinterval = input$select_avgwage)
   )
   
-  #
+  
   output$userpanel <- renderUI({
-    # session$user is non-NULL only in authenticated sessions
     if (!is.null(session$user)) {
       sidebarUserPanel(
         span("Logged in as ", session$user),
