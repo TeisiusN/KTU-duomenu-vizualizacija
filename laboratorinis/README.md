@@ -2,14 +2,14 @@
 
 | Variantas | ecoActCode |
 |------------- | ------------- |
-|20   | 11111111111 |
+|15   | 522920 |
 
 
 ### 1. Užduotis
 
 Atsakymas:
 
-![histograma](img/pavyzdys1.png)
+![histograma](img/1užduotis.png)
 
 Išvados:
 
@@ -17,7 +17,7 @@ Išvados:
 
 Atsakymas:
 
-![atlyginimai](img/pavyzdys2.png)
+![atlyginimai](img/2užduotis.png)
 
 Išvados:
 
@@ -26,7 +26,7 @@ Išvados:
 
 Atsakymas:
 
-![apdraustieji](img/pavyzdys3.png)
+![apdraustieji](img/3užduotis.png)
 
 Išvados:
 
@@ -35,4 +35,4 @@ Išvados:
 
 Shiny R aplikacijos nuotrauka:
 
-![shiny app](img/shiny_example.png)
+![shiny app](img/4užduotis-shiny.png)
