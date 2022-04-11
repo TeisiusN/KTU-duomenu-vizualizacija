@@ -5,8 +5,6 @@ library(readr)
 library(shiny)
 library(shiny.fluent)
 library(DT)
-shinyjs::useShinyjs()
-library(EpiCurve)
 
 ui = dashboardPage(skin = "green",
                     dashboardHeader(title = "Duomenu valdymas"),
