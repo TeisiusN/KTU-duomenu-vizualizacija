@@ -69,16 +69,7 @@ server = function(input, output, session){
   output$data1_epicurve = renderPlot(
       ggplot(data1, wageinterval = input$select_avgwage)
   )
-  
-  
-  output$userpanel <- renderUI({
-    if (!is.null(session$user)) {
-      sidebarUserPanel(
-        span("Logged in as ", session$user),
-        subtitle = a(icon("sign-out"), "Logout", href="__logout__"))
-    }
-  })
-  
+ 
   output$plot1 = renderPlot(
     data1 %>%
       filter(name == input$imones_pavadinimas) %>%
