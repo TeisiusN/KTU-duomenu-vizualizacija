@@ -4,7 +4,7 @@ library(readr)
 library(tidyverse)
 library(dplyr)
 
-data = read.csv("../data/lab_sodra.csv", fileEncoding = "UTF-8")
+data = read.csv("../../laboratorinis/data/lab_sodra.csv", fileEncoding = "UTF-8")
 data
 
 summary(data)
