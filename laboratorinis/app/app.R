@@ -42,7 +42,7 @@ ui = dashboardPage(skin = "green",
 
 
 server = function(input, output, session){
-  data = read_csv("../data/lab_sodra.csv")
+  data = read_csv("../../laboratorinis/data/lab_sodra.csv")
   data1 = data %>%
     filter(ecoActCode == 522920) %>%
     mutate(month_value=as.integer(substr(month, 5 ,7)))
